@@ -1,0 +1,261 @@
+/*mobile*/
+.page{
+    display: flex;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration:none;
+    display: flex;
+    width:200px;
+    height: 20px;
+    background-color: #FA4A0C; 
+    justify-content:center;
+    align-items: center;
+    font-size: 14px;
+    margin: 20px;
+    border-radius:10px;
+    color:white;
+  
+}  
+.dropdown-content a:hover {background-color:grey;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+
+
+#icone{
+    font-size: 40px;
+    float: left;
+    padding-left: 10px;
+}
+  
+
+
+.accueil{
+    background: url(image/menu.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: opacity(90%);
+    width: 100%;
+    height: 350px;
+}
+.accueil p{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    font-weight:bold;
+}
+
+.image1{
+    display: flex;
+    width:100%;
+    height:300px;
+    align-self: center;
+    filter:opacity(75%);
+   
+}
+    
+.pizza{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;  
+}
+.burger{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;  
+}
+.salade{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+ 
+}
+.choix img{
+    width: 100%;
+    height:250px;
+    border-radius:10px; 
+}
+.choix1 img{
+    width: 100%;
+    height:250px;
+    border-radius:10px; 
+}
+.logo{
+    width:140px;
+    height:100%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+.choix{
+    width: 100%;
+    border: 3px solid #FA4A0C;
+    border-radius: 10px;
+    margin:0 35px 35px 0;
+}
+.choix1{
+    width: 100%;
+    border: 3px solid #FA4A0C;
+    border-radius:10px; 
+    margin:0 35px 35px 0;   
+}
+.choix p{
+    font-size: 15px;
+    margin: 10px;
+}
+.choix1 p{
+    font-size: 15px;
+    margin:10px;
+}
+a{
+    display: flex;
+    width:80px;
+    height: 40px;
+    background-color: #FA4A0C; 
+    justify-content:center;
+    align-items:center;
+    font-size: 15px;
+    margin: 20px;
+    border-radius:15px;
+    color:white;
+    
+}
+.liste{
+    display: flex;
+    justify-content:space-between;
+}
+
+.pieds{
+    height: 20%;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+   
+}
+.RS{
+    display: flex;
+    color: #FA4A0C;
+   
+}
+i{
+    display: flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+.pieds p{
+    display: flex;
+    font-size: 10px;
+    align-items: flex-end;
+}
+.prob div{
+    font-size: 16px;
+    margin:10px;
+}
+/*tablette*/
+@media(min-width:760px) {
+    .pizza1{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            align-self:center;
+       
+    }
+    .burger1{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-self:center; 
+    }
+    .salade1{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-self:center; 
+
+    }
+    .accueil{
+        background: url(image/menu.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: opacity(90%);
+        width: 100%;
+        height: 450px;
+    }
+    
+}
+/*desktop*/
+@media(min-width:1100px){
+    .accueil{
+        width: 100%;
+        height:520px;
+        }
+    .dropdown-content a {
+        color:black;
+        text-align: center;
+        padding: 14px 16px;
+        width:50px;
+        height: 20px;
+        text-decoration: none;
+        font-size: 14px;
+    
+    }
+    .dropdown-content {
+        display: flex;
+        box-shadow: none;
+        background-color: none;
+        height:60px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #icone {
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {display: flex;}
+
+    .dropdown{
+        display: flex;
+        justify-content:right;
+        height: 10px;
+        width: 40%;
+    
+    }
+    .menu{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    
+    
+    
+}

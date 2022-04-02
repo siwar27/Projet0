@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Maquette 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="Maq2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="menu">
+            <div class="dropdown">
+                <nav id=icone class="fa fa-bars"></nav>
+                <div class="dropdown-content">
+                    <a href="Maquette-1.html">HOME</a>
+                    <a href="Image/Pizza.jpg">PIZZAS</a>
+                    <a href="Image/burger.jpg">BURGERS</a>
+                    <a href="Image/salade.jpg">SALADES</a>
+                    <a href="Maquette-3.html">CONTACT</a>
+                </div>
+            </div>
+            <img class="logo" src="Image/Logo.png" alt="">
+        </div>
+        <div class="accueil">
+            <p>Bon appétit</p>
+        </div>
+        <div class="information">
+            <h3>Vos informations </h3>
+            <div class="coordonnees">
+                <div class="partie1">
+                    <label for="fname">Nom:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Nom"><br>
+                    <label for="lname">Prénom:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Prénom">
+                </div>
+                <div class="partie2">
+                    <label for="Tel">Téléphone:</label><br>
+                    <input type="number" id="Tel" name="Tel" placeholder="N°Tel"><br>
+                    <label for="Email">Email:</label><br>
+                    <input type="email" id="Email" name="Email" placeholder="Email">
+                </div>
+            </div>
+        </div>
+        <div class="commande">
+            <h3>Votre commande</h3>
+            <div class="CO">
+                <p>Suppliments</p>
+                <p>Pizza 4 fromages</p>
+            </div>
+            <div class="ingre">
+                <div class="ingredient">
+                    <form>
+                        <label for="ingredient">Ingrédient:</label><br>
+                        <input type="text" id="ingredient" name="ingredient" placeholder="Fromage"><br>
+                        <label for="ingredient1">Ingrédient 1:</label><br>
+                        <input type="text" id="ingredient1" name="ingredient1" placeholder="Fromage"><br>
+                        <label for="ingredient2">Ingrédient 2:</label><br>
+                        <input type="text" id="ingredient2" name="ingredient2" placeholder="Fromage"><br>
+                        <label for="ingredient3">Ingrédient 3:</label><br>
+                        <input type="text" id="ingredient3" name="ingredient3" placeholder="Fromage"><br>
+                    </form>
+                </div>
+                <div class="quantite">
+                    <label for="quantites">Quantités:</label><br>
+                    <input type="number" id="quantites" placeholder="1" max="10"><br>
+                    <label for="quantites1">Quantités 1:</label><br>
+                    <input type="number" id="quantites1" placeholder="1" max="10"><br>
+                    <label for="quantites2">Quantités 2:</label><br>
+                    <input type="number" id="quantites2" placeholder="1" max="10"><br>
+                    <label for="quantites3">Quantités 3:</label><br>
+                    <input type="number" id="quantites3" placeholder="1" max="10"><br>
+                </div>
+            </div>
+            <div class="frite">
+                    <form>
+                      <input type="radio" id="AF" name="frite" value="AF">
+                      <label for="AF">Avec frites</label><br>
+                      <input type="radio" id="SF" name="frite" value="SF">
+                      <label for="SF">Sans frites</label>
+                    </form>
+            </div>
+        </div>
+    
+        <div class="plus">
+            <div class="boisons">
+                <h3>Boisons</h3>
+                <div class="des">
+                    <div class="DSR">
+                        <input type="checkbox" id="boi1" name="boison1">
+                        <label for="boison1"> Coca-Cola</label>
+                    </div>
+                    <input class="boi" type="text"  id="boison1" name="boison1" placeholder="1">
+                </div>
+                <div class="des">
+                    <div class="DSR">
+                        <input type="checkbox" id="boi2" name="boison2">
+                        <label for="boison2"> Fanta</label>
+                    </div>
+                    <input class="boi" type="text" id="boison2" name="boison2" placeholder="1">
+                </div>
+                <div class="des">
+                    <div class="DSR">
+                        <input type="checkbox" id="boi3" name="boison3">
+                        <label for="boison3">L'eau</label>
+                    </div>
+                    <input class="boi" type="text" id="boison3" name="boison3" placeholder="1">
+                </div>
+            </div>
+            <div class="dessert">
+                <h3>Desserts</h3>
+                <div class="des">
+                    <div class="DSR">
+                        <input type="checkbox" id="Des1" name="Dessert1">
+                        <label for="Dessert1"> Tiramisu</label>
+                   </div>
+                    <input class="boi" type="text" id="Dessert1" name="Dessert1" placeholder="1"><br>
+                </div>
+                <div class="des">
+                    <div class="DSR">
+                        <input type="checkbox" id="Des2" name="Dessert2">
+                        <label for="Dessert2"> Chesse-Cake</label>
+                    </div>
+                        <input class="boi" type="text" id="Dessert2" name="Dessert2" placeholder="1"><br>
+                </div>
+                <div class="des">
+                    <div class="DSR">
+                        <input type="checkbox" id="Des3" name="Dessert3">
+                        <label for="Dessert3">Tarte au fraise</label>
+                    </div>
+                        <input class="boi" type="text" id="Dessert3" name="Dessert3" placeholder="1"><br>
+                </div>
+            </div>
+        </div>
+        <div class="livraison">
+            <h3>Adresse de livraison</h3>
+            <div class="coordonnees">
+                <div class="partie1">
+                    <label for="fname">Nom:</label><br>
+                    <input type="text" id="nom" name="fname" placeholder="Nom"><br>
+                    <label for="lname">Prénom:</label><br>
+                    <input type="text" id="prenom" name="lname" placeholder="Prénom"><br>
+                    <label for="Tel">Téléphone:</label><br>
+                    <input type="number" id="tel" name="Tel" placeholder="N°Tel"><br>
+                    <label for="Email">Email:</label><br>
+                    <input type="email" id="email" name="Email" placeholder="Email"><br>
+                </div>
+                <div class="partie2">
+                    <label for="adresse">Adresse:</label><br>
+                    <input type="text" id="adresse" name="adresse" placeholder="N° Rue "><br>
+                    <label for="code">Code postale:</label><br>
+                    <input type="number" id="code" name="code" placeholder="75000"><br>
+                    <label for="ville">Ville:</label><br>
+                    <input type="text" id="ville" name="ville" placeholder="Paris"><br>
+                    <label for="pays">Pays:</label><br>
+                    <input type="text" id="pays" name="pays" placeholder="France"><br>
+                </div>
+            </div>
+        </div>
+
+        <button class="bouton">Valider</button>
+
+    </div>
+
+</body>
+
+</html>

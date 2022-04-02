@@ -1,0 +1,274 @@
+/*mobile*/
+.page{
+    display: flex;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration:none;
+    display: flex;
+    width:200px;
+    height: 20px;
+    background-color: #FA4A0C; 
+    justify-content:center;
+    align-items: center;
+    font-size: 14px;
+    margin: 20px;
+    border-radius:10px;
+    color:white;
+  
+}  
+.dropdown-content a:hover {background-color:grey;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+
+#icone{
+    font-size: 40px;
+    float: left;
+    padding-left: 10px;
+}
+
+.accueil{
+    background: url(image/menu.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: opacity(90%);
+    width: 100%;
+    height:350px;
+}
+.accueil p{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    font-weight:bold;  
+}
+.logo{
+    width:140px;
+    height:100%;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+.information input{
+    border-color:lightgrey;
+    margin: 15px 0 15px 0;
+    border-radius: 3px;
+    height: 35px;
+    width:95%;
+   
+}
+.commande input{
+    border-color:lightgrey; 
+    margin: 20px 0 20px 0;
+}
+.boisons input{
+    border-color:lightgrey;
+}
+.dessert input{
+    border-color:lightgrey;
+
+}
+.livraison input{
+    border-color:lightgrey;
+    margin: 5px 0 5px 0;
+    border-radius: 3px;
+    height: 30px;
+    width: 95%;
+}   
+.CO{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #FA4A0C;
+}
+.ingre{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ingredient input{
+    border-radius: 3px;
+    height: 30px;
+    width:95%;
+}
+.quantite input{
+    border-radius: 3px;
+    height: 30px;
+    width:95%;
+}
+.plus{
+    display: flex;
+    flex-direction:column;
+}
+.boi{
+    margin: 5px 0 5px 0;
+    border-radius: 3px;
+    height: 30px;
+    width: 95%;
+}
+.DSR{
+    display:flex;
+    flex-direction: row;
+}
+.bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: #FA4A0C;
+    border-color: antiquewhite;
+    color:white;
+    border-radius:3px;
+    margin:20px;
+    width:30%;
+    height:40px;
+}
+/*tablette*/
+@media(min-width:760px){
+    .ingre{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .ingredient {
+        width:75%;
+    }
+    .quantite{
+        width:25%;
+    }
+    .accueil{
+        width: 100%;
+        height:480px;
+    }
+    
+}
+/*desktop*/
+@media(min-width:1100px){
+    .accueil{
+        width: 100%;
+        height:520px;
+        }
+    .plus{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .boisons{
+        width: 30%;
+    }
+    .dessert{
+        margin: 0 0 0 20%;
+        width: 30%;
+    }
+    .DSR{
+        margin:10px 10px 0 0;
+        width:45%;
+    }
+    .des{
+        display: flex;
+        flex-direction: row;
+    }
+    .ingre{
+        display: flex;
+        flex-direction: row;
+        margin:0 50px 0 0;
+        width: 100%;
+    }
+    .ingredient {
+        width:40%;
+    }
+    .quantite{
+        width:40%;
+    }
+    h3{
+        display: flex;
+        justify-content: left;
+    }
+    .coordonnees{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+    }
+    .partie1{
+        width: 40%;
+    }
+    .partie2{
+        width: 40%;
+    }
+    .bouton{
+        display: flex;
+        align-self: flex-end;
+        border-radius:7px;
+        margin:30px;
+        width:15%;
+        height:60px;
+    }
+    .accueil{
+        width: 100%;
+        height:520px;
+        }
+    .dropdown-content a {
+        color:black;
+        text-align: center;
+        padding: 14px 16px;
+        width:50px;
+        height: 20px;
+        text-decoration: none;
+        font-size: 14px;
+    
+    }
+    .dropdown-content {
+        display: flex;
+        box-shadow: none;
+        background-color: none;
+        height:60px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #icone {
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {display: flex;}
+    
+    .dropdown{
+        display: flex;
+        justify-content:right;
+        height: 10px;
+        width: 40%;
+    
+    }
+    .menu{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+}
